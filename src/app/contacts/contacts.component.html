@@ -1,0 +1,10 @@
+<div *ngIf="isContactsUp">
+  <table>
+    <tr><th>Name</th><th>Email</th><th>Phone number</th></tr>
+    <tr *ngFor="let item of results.data; let i = index">
+      <th><p>{{item.firstName}} {{item.lastName}}</p></th>
+      <th><p>{{item.emails[0].email}}</p></th>
+      <th><p>{{item.phoneNumbers[0].number}}</p></th>
+    </tr>
+  </table>
+</div>
