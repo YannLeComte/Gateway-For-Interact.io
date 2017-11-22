@@ -1,14 +1,14 @@
 <div *ngIf="!loggedIn">
-  <h2>Login to see your contacts </h2>
+  <h1>Access your contacts</h1>
   <form id="formLogin">
     <input #usernameInput id="userId" type="text" placeholder="Enter email">
     <input #passwordInput id="userPassword" type="password" placeholder="Enter password">
-    <button type="button" (click)="loginUser(usernameInput.value, passwordInput.value)" id="logUser">Login</button>
+    <button type="button" (click)="loginUser(usernameInput.value, passwordInput.value)" id="logUser"><span>Login</span></button>
   </form>
 </div>
 
 <div *ngIf="loggedIn">
-  <h2 class="WelcomeMessage">Welcome {{results.user.firstName}}</h2>
+  <h1 class="WelcomeMessage">{{results.user.firstName}}'s contacts</h1>
   <button type="button" (click)="logout()">Logout</button>
   <app-contacts [authToken]="authToken"></app-contacts>
 </div>

@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     this.http.post('https://internal-api-staging-lb.interact.io/v2/login', body, {headers: {'Content-Type': 'application/json'}}).subscribe(
       res => {
         this.setResults(res);
-        this.setUser(usernameP, passwordP, this.results.token.authToken);
+        this.setUser(usernameP, passwordP, res['token'].authToken);
         this.loggedIn = true;
       },
       err => {

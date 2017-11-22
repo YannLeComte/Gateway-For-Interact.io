@@ -1,0 +1,29 @@
+th {
+  font-weight: 100;
+}
+
+th {
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 8px;
+}
+table {
+  font-size: 12px;
+  background: #ffffff24;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px;
+  width: 100%;
+}
+
+.table .tr, .table tr, table .tr, table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr.head th {
+  font-size: 16px;
+  color:white;
+  border-bottom: 2px solid #cccccc;
+}
