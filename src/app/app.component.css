@@ -1,17 +1,13 @@
 /* Application-wide Styles */
 h1 {
   color: white;
-  font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 250%;
 }
-h2, h3 {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
+
+h1, h2, h3, p, input, button {
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
-body {
-  margin: 0;
-}
+
 body, input[text], button {
   color: #888;
   font-family: Cambria, Georgia;
@@ -19,13 +15,6 @@ body, input[text], button {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  margin-top:20px;
 }
 
 .body {
@@ -60,4 +49,11 @@ app-login{
   background-image: url(https://leadscore.io/wp-content/uploads/2017/07/Chairs.png);
   background-position: center center;
   background-size: cover;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top:20px;
 }

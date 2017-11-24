@@ -3,6 +3,9 @@
   <form id="formLogin">
     <input #usernameInput id="userId" type="text" placeholder="Enter email">
     <input #passwordInput id="userPassword" type="password" placeholder="Enter password">
+    <div *ngIf="errorMessage">
+      <p class="error">{{errorMessage}}</p>
+    </div>
     <button type="button" (click)="loginUser(usernameInput.value, passwordInput.value)" id="logUser"><span>Login</span></button>
   </form>
 </div>

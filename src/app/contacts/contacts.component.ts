@@ -37,7 +37,7 @@ export class ContactsComponent implements OnInit {
     );
   }
 
-  /* Set the athentification token */
+  /* Set the authentification token */
   setToken(tokenP): void {
     this.authToken = tokenP;
   }
